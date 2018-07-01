@@ -1,7 +1,9 @@
 # J-bot
 
-Our purpose is to make affordable assistant robot
-It is currently based on google AIY voice kit
+Our purpose is to make affordable assistant robot.
+
+It is currently based on google AIY voice kit.
+
 Later, I wanna make afforable assistant robot depending any linux board.
 
 # List of materials
