@@ -1,10 +1,15 @@
 # J-bot
 
-Affordable assistant robot
+Our purpose is to make affordable assistant robot
+It is currently based on google AIY voice kit
+Later, I wanna make afforable assistant robot depending any linux board.
 
-It has belows.
-
+# List of materials
+<<<<<<< HEAD
 * Raspberry pi
+=======
+* raspberry pi
+>>>>>>> origin/master
 * Camera
 * Speaker & microphone
 * Button
@@ -17,7 +22,9 @@ It has belows.
 * OS : linux
 * Framwork : ROS
 
+
 # Functions
 
 * google-assistant
 * vision works
+* sensing and moving (with arduino)
