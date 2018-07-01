@@ -1,20 +1,23 @@
-#J-bot
-Affordable assistant robot 
+# J-bot
+
+Affordable assistant robot
+
 It has belows.
-* raspberry pi
+
+* Raspberry pi
 * Camera
 * Speaker & microphone
 * Button
------------------------
 * Arduino
 * Servo motors
 * Ultra sonic sensors
------------------------
 
-#System
+# System
+
 * OS : linux
 * Framwork : ROS
 
-#Functions
+# Functions
+
 * google-assistant
 * vision works
