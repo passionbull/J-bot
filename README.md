@@ -5,11 +5,7 @@ It is currently based on google AIY voice kit
 Later, I wanna make afforable assistant robot depending any linux board.
 
 # List of materials
-<<<<<<< HEAD
 * Raspberry pi
-=======
-* raspberry pi
->>>>>>> origin/master
 * Camera
 * Speaker & microphone
 * Button
@@ -25,6 +21,6 @@ Later, I wanna make afforable assistant robot depending any linux board.
 
 # Functions
 
-* google-assistant
-* vision works
-* sensing and moving (with arduino)
+* Google-assistant
+* Vision works
+* Sensing and moving (with arduino)
