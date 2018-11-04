@@ -18,6 +18,10 @@ logging.basicConfig(
     format="[%(asctime)s] %(levelname)s:%(name)s:%(message)s"
 )
 
+import aiy.i18n
+lang = aiy.i18n.get_language_code()
+
+
 '''
 You can set local_commands
 input - text
@@ -39,13 +43,22 @@ def local_commands(text):
         elif text =='불 꺼 줘':
             answer = '알겠습니다.'
             textToSpeech(answer)
-        elif 'IP' in text or 'ip' in text :
+        elif 'IP' in text or 'ip' in text:
             answer = 'IP는 '
             answer += str(subprocess.check_output("hostname -I", shell=True))
             answer = answer.replace('n','')
             answer = answer.replace('b','')
             textToSpeech(answer)
             # print(answer)
+        elif '영어' in text and '설정' in text:
+            aiy.i18n.set_language_code('en-US')
+            lang = aiy.i18n.get_language_code()
+            pass
+        elif 'korean' in text.lower() and 'set' in text:
+            aiy.i18n.set_language_code('ko-KR')
+            lang = aiy.i18n.get_language_code()
+            pass
+
         else:
             isAnswer = False
     else:
@@ -62,7 +75,10 @@ sox_effects is options.
 '''
 from google_speech import Speech
 def textToSpeech(text):
-    lang = "ko_KR"
+    # lang = 'ko_KR'
+    global lang
+    lang = lang.replace('-','_')
+
     speech = Speech(text, lang)
     sox_effects = ("speed", "1.0")
     sox_effects = ("vol", "0.05")

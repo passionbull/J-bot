@@ -12,7 +12,7 @@ class SerialComm:
     def action(self):
         self.motorControl(60)
         time.sleep(1)
-        self.motorControl(140)
+        self.motorControl(100)
 
     def read(self):
         try:
